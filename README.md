@@ -8,6 +8,30 @@ Spring Boot REST API to fetch inventory details between two dates using H2 in-me
 - Spring Data JPA
 - H2 Database
 
+## Project Structure
+```text
+Inventory_Curd_Operation
+├── src
+│   └── main
+│       ├── java/com/calsoft/api
+│       │   ├── controller/      
+│       │   │   └── InventoryController.java
+│       │   ├── entity/          
+│       │   │   ├── Inventory.java
+│       │   │   └── InventoryDetails.java
+│       │   ├── repository/      
+│       │   │   ├── InventoryRepository.java
+│       │   │   └── InventoryDetailsRepository.java
+│       │   ├── service/         
+│       │   │   └── InventoryService.java
+│       │   └── InventoryCurdOperationApplication.java 
+│       └── resources
+│           ├── application.properties 
+│           └── data.sql         
+└── pom.xml
+```
+
+
 ## Endpoint
 GET /api/inventory/details?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD
 
